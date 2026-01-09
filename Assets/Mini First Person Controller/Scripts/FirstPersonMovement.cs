@@ -5,6 +5,9 @@ public class FirstPersonMovement : MonoBehaviour
 {
     public float speed = 5;
 
+    [SerializeField]
+    private PlayerController playerController;
+
     [Header("Running")]
     public bool canRun = true;
     public bool IsRunning { get; private set; }
@@ -25,6 +28,9 @@ public class FirstPersonMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (playerController.Locked)
+            return;
+
         // Update IsRunning from input.
         IsRunning = canRun && Input.GetKey(runningKey);
 

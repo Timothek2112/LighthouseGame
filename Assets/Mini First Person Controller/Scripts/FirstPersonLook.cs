@@ -4,6 +4,8 @@ public class FirstPersonLook : MonoBehaviour
 {
     [SerializeField]
     Transform character;
+    [SerializeField]
+    private PlayerController playerController;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
     float cameraVerticalRotation = 0;
@@ -26,6 +28,9 @@ public class FirstPersonLook : MonoBehaviour
 
     void Update()
     {
+        if (playerController.Locked)
+            return;
+
         // Get smooth velocity.
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);

@@ -8,8 +8,6 @@ public abstract class Interactable : MonoBehaviour
     [SerializeField] private Outline _outline;
     [SerializeField] private float _outlineWidth = 3;
 
-    [SerializeField] public UnityEvent<PlayerController> OnInteract;
-
     public void PreInteract()
     {
         if(_outline != null)
