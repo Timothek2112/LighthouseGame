@@ -14,7 +14,7 @@ public class PlayerTarget : MonoBehaviour
 
     [SerializeField] private Interactable currentInteractable;
 
-    private void FixedUpdate()
+    private void Update()
     {
         CheckForInteractable();
 

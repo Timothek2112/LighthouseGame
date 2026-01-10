@@ -9,7 +9,7 @@ public class OilerInteractable : Interactable
     public override void Interact(PlayerController playerController)
     {
         playerController.animation.TakeAnimation();
-        GameManager.Quests.Complete(quest);
+        GameManager.Quests.Complete(quest, GameManager.Time.GetToday(), 0);
         Destroy(gameObject);
     }
 }
