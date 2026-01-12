@@ -6,6 +6,7 @@ TagManager:
   tags:
   - QuestsController
   - GlobalController
+  - UI
   layers:
   - Default
   - TransparentFX

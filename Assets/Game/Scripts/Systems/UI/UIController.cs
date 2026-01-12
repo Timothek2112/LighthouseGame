@@ -6,6 +6,9 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] Animator _tabAnimator;
     [SerializeField] PlayerController _pController;
+    public QuestUIController QuestUI;
+    public FolderController FolderController;
+
     bool opened = false;
 
     private void Awake()
@@ -31,6 +34,7 @@ public class UIController : MonoBehaviour
         opened = true;
         _pController.LockMovement();
         _pController.ShowCursor();
+        FolderController.HideNotification();
     }
 
     public void CloseTab()
@@ -39,6 +43,11 @@ public class UIController : MonoBehaviour
         opened = false;
         _pController.UnlockMovement();
         _pController.HideCursor();
+    }
+
+    public void CreateQuestUI()
+    {
+        QuestUI.CreateQuestsUI();
     }
 
 }

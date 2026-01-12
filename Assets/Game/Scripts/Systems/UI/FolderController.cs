@@ -23,9 +23,31 @@ public class FolderController : MonoBehaviour
     [SerializeField]
     private GameObject _memoirsContent;
 
+    [SerializeField]
+    private GameObject _notificationObject;
+
     private void Awake()
     {
         UpdateVisibility();
+        QuestEvents.QuestUpdated += Notification;
+    }
+
+    private void OnDestroy()
+    {
+        QuestEvents.QuestUpdated -= Notification;
+    }
+
+    public void Notification(Quest quest)
+    {
+        if(quest.Completed && (!quest.isStage || quest.forceNotification))
+        {
+            _notificationObject.SetActive(true);
+        }
+    }
+
+    public void HideNotification()
+    {
+        _notificationObject.SetActive(false);
     }
 
     private void UpdateVisibility()
@@ -34,8 +56,6 @@ public class FolderController : MonoBehaviour
         _memoirsContent.SetActive(MemoirsOpened);
         questsImage.color = QuestsOpened ? openedColor : closedColor;
         memoirsImage.color = MemoirsOpened ? openedColor : closedColor;
-
-        
     }
 
     public void QuestsClick()

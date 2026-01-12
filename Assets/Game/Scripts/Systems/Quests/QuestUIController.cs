@@ -14,11 +14,34 @@ public class QuestUIController : MonoBehaviour
     private Transform QuestParent;
     public int stagePadding = 50;
 
+    private void Awake()
+    {
+        GameManager.Time.DayChanged += DayChanged;
+        QuestEvents.QuestUpdated += QuestUpdated;
+    }
+
+    private void QuestUpdated(Quest quest)
+    {
+        CreateQuestsUI();
+    }
+
+    private void DayChanged(int today)
+    {
+        CreateQuestsUI();
+    }
+
     [ContextMenu("Create")]
     public void CreateQuestsUI()
     {
-        foreach(var questObj in _controller.days[GameManager.Time.GetToday()].quests)
+        ClearQuestsUI();
+
+        foreach (var questObj in _controller.days[GameManager.Time.GetToday()].quests)
         {
+            if (!questObj.PrerequisitesDone())
+            {
+                continue;
+            }
+            
             var newQuest = Instantiate(QuestUIPrefab);
             newQuest.transform.SetParent(QuestParent, false);
             var quest = newQuest.GetComponent<QuestUIAdapter>();
@@ -27,6 +50,9 @@ public class QuestUIController : MonoBehaviour
 
             foreach(var stage in questObj.stages)
             {
+                if (!stage.PrerequisitesDone())
+                    continue;
+
                 var newQuest1 = Instantiate(QuestUIPrefab);
                 newQuest1.transform.SetParent(QuestParent, false);
                 newQuest1.GetComponent<HorizontalLayoutGroup>().padding.left = stagePadding;
@@ -35,6 +61,23 @@ public class QuestUIController : MonoBehaviour
                 quest1.UpdatePresence();
             }
         }
-        
+
+        // Принудительное обновление всех Canvas
+        Canvas.ForceUpdateCanvases();
+
+        // Обновление Layout
+        LayoutRebuilder.ForceRebuildLayoutImmediate(QuestParent.GetComponent<RectTransform>() );
+
+        // Еще одно обновление для надежности
+        Canvas.ForceUpdateCanvases();
+
+    }
+
+    private void ClearQuestsUI()
+    {
+        for(int i = 0; i < QuestParent.childCount; i++)
+        {
+            Destroy(QuestParent.GetChild(i).gameObject);
+        }
     }
 }

@@ -5,10 +5,10 @@ using UnityEngine.Events;
 
 public abstract class Interactable : MonoBehaviour
 {
-    [SerializeField] private Outline _outline;
-    [SerializeField] private float _outlineWidth = 3;
+    [SerializeField] protected Outline _outline;
+    [SerializeField] protected float _outlineWidth = 3;
 
-    public void PreInteract()
+    public virtual void PreInteract()
     {
         if(_outline != null)
             _outline.OutlineWidth = _outlineWidth;
@@ -19,7 +19,7 @@ public abstract class Interactable : MonoBehaviour
 
     }
 
-    public void PostInteract()
+    public virtual void PostInteract()
     {
         if (_outline != null)
             _outline.OutlineWidth = 0;
