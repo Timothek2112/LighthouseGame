@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     public static SubtitlesManager Subtitles;
     public static ScreenManager Screen;
     public static UIManager UI;
+
+    public Quest firstQuest;
 
     [Header("Story")]
     [SerializeField] Intro intro;
@@ -24,6 +27,14 @@ public class GameManager : MonoBehaviour
         UI.CreateQuestsUI();
 
         intro.Play();
+        try
+        {
+            QuestEvents.QuestUpdated?.Invoke(firstQuest);
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+        }
     }
 
 }

@@ -13,6 +13,7 @@ public class QuestInteractable : Interactable
     private void Awake()
     {
         QuestEvents.QuestUpdated += OnQuestUpdate;
+        GameManager.Subtitles.GetController(SubtitlesType.Center).SubtitlesEnded += OnSubtitleEnd;
     }
 
     private void OnDestroy()
@@ -59,12 +60,19 @@ public class QuestInteractable : Interactable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         GameManager.Quests.Complete(this.quest, quest.day, stage);
-        if(subtitle != null)
+        if(subtitle != null && quest.Completed)
         {
             GameManager.Subtitles.Show(SubtitlesType.Main, subtitle);
         }
+    }
+
+    private void OnSubtitleEnd(Subtitle subtitle)
+    {
     }
 
     public override void PostInteract()

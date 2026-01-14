@@ -22,6 +22,14 @@ public class TimeManager : MonoBehaviour
         today++;
         try
         {
+            QuestEvents.QuestUpdated?.Invoke(null);
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e);
+        }
+        try
+        {
             DayChanged?.Invoke(today);
         }
         catch (Exception e)

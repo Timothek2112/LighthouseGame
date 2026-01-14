@@ -13,6 +13,8 @@ public class SubtitlesController : MonoBehaviour
     public bool displaying = false;
     public float defaultLetterSpeed = 0.1f;
     public GameObject gradient;
+    public bool goBlack = false;
+    public GameObject comment;
 
     private Coroutine ShowCoroutine;
     private Subtitle current;
@@ -33,7 +35,7 @@ public class SubtitlesController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.E) && current != null && current.WaitForUser)
         {
             if(ShowCoroutine != null)
             {
@@ -57,6 +59,12 @@ public class SubtitlesController : MonoBehaviour
 
     public IEnumerator Show(Subtitle content)
     {
+        if (goBlack)
+        {
+        if(comment != null)
+            comment.gameObject.SetActive(true);
+        }
+
         wasDisplaying = true;
         if(gradient != null)
             gradient.SetActive(true);
@@ -108,5 +116,8 @@ public class SubtitlesController : MonoBehaviour
         displaying = false;
         ShowCoroutine = null;
         SubtitlesEnded?.Invoke(current);
+
+        if(comment != null)
+        comment.gameObject.SetActive(false);
     }
 }

@@ -59,6 +59,10 @@ public class PlayerTarget : MonoBehaviour
                 if(qInt.quest.PrerequisitesDone())
                     hint.SetActive(true);
             }
+            else
+            {
+                hint.SetActive(true);
+            }
         }
     }
 }

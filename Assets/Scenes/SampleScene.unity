@@ -1996,8 +1996,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &38407874
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3753,8 +3753,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &70850909
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5457,8 +5457,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &78063773
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7369,6 +7369,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1625651003}
+    - targetCorrespondingSourceObject: {fileID: 6014503084441653313, guid: b4960a40829300a4d97842a926b18eee,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625651007}
     - targetCorrespondingSourceObject: {fileID: 4767400413853537203, guid: b4960a40829300a4d97842a926b18eee,
         type: 3}
       insertIndex: -1
@@ -7565,6 +7569,141 @@ MonoBehaviour:
   taskCurrent: 0
   Prerequisites:
   - {fileID: 825218288}
+--- !u!1 &463772543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463772544}
+  - component: {fileID: 463772546}
+  - component: {fileID: 463772545}
+  m_Layer: 2
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &463772544
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463772543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.054397, y: 0.054397, z: 0.054397}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1673400847}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00000047684, y: -29.782}
+  m_SizeDelta: {x: 328.29468, y: 59.56446}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &463772545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463772543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press "E" to skip
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &463772546
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463772543}
+  m_CullTransparentMesh: 1
 --- !u!1001 &470448691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9837,8 +9976,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &543059488
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15843,6 +15982,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 567538576}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd748b8440804f3458108c88e1f50548,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 567538580}
   m_SourcePrefab: {fileID: 100100000, guid: bd748b8440804f3458108c88e1f50548, type: 3}
 --- !u!1 &567538570 stripped
 GameObject:
@@ -16765,9 +16908,26 @@ MonoBehaviour:
   quest: {fileID: 1573125630}
   stage: 1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 567538580}
   targetChemodan: {fileID: 567538570}
   targetChemodanFinal: {fileID: 19786077}
+--- !u!114 &567538580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567538570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: I bought this case when I was young. My dream was to go on a trip one day.
+    But it sat in the attic for about 40 years... Still looks like brand new!
+  time_to_show: 3
+  letterSpeed: 0
 --- !u!1001 &570683061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16898,6 +17058,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1548828662}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 718af4ea890771c4eafab3441f5dce83,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1548828664}
     - targetCorrespondingSourceObject: {fileID: 2477973282930154650, guid: 718af4ea890771c4eafab3441f5dce83,
         type: 3}
       insertIndex: -1
@@ -17016,8 +17180,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 530669757}
   displaying: 0
-  defaultLetterSpeed: 0.05
+  defaultLetterSpeed: 0.025
   gradient: {fileID: 346450973}
+  goBlack: 1
+  comment: {fileID: 0}
 --- !u!1001 &579924842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18698,8 +18864,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &579924849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18833,6 +18999,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 588174229}
+    - targetCorrespondingSourceObject: {fileID: 4401926382414545254, guid: 327da02e46285b44782ae4774203e0f3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588174236}
     - targetCorrespondingSourceObject: {fileID: 9194778605132019229, guid: 327da02e46285b44782ae4774203e0f3,
         type: 3}
       insertIndex: -1
@@ -18888,7 +19058,7 @@ MonoBehaviour:
   quest: {fileID: 1356337495}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 588174236}
   newKrovat: {fileID: 0}
 --- !u!114 &588174231
 MonoBehaviour:
@@ -24747,6 +24917,24 @@ MonoBehaviour:
     - {x: -0.57735026, y: 0.5773503, z: -0.57735026}
     - {x: -0.5773503, y: -0.5773502, z: -0.5773503}
     - {x: -0.5773503, y: -0.5773502, z: 0.5773503}
+--- !u!114 &588174236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588174227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: For the first time ever, I was unable to sleep properly last night because
+    my thoughts were constantly racing through my mind. I was afraid of falling asleep
+    and waking up in the old house again. Alone again.
+  time_to_show: 5
+  letterSpeed: 0
 --- !u!1 &589631470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: b4960a40829300a4d97842a926b18eee,
@@ -25157,7 +25345,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &665249256
 MeshRenderer:
@@ -25935,8 +26123,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 948528415}
-  - component: {fileID: 948528414}
   - component: {fileID: 948528413}
+  - component: {fileID: 948528418}
+  - component: {fileID: 948528417}
+  - component: {fileID: 948528416}
   m_Layer: 9
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -25965,24 +26155,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0743408, y: 1.2389259, z: 1.0270386}
   m_Center: {x: -0.010986328, y: 0.14935493, z: 0.019866943}
---- !u!114 &948528414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948528412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730d453e9ead82a4b9b4973c58fa9b74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _outline: {fileID: 1072380036}
-  _outlineWidth: 29.65
-  quest: {fileID: 460237840}
-  stage: -1
-  _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
 --- !u!4 &948528415
 Transform:
   m_ObjectHideFlags: 0
@@ -25998,6 +26170,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948528416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948528412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 1
+  text: 'Thank you for playing our game! We enjoyed working on this project and hope
+    to develop this concept into something bigger in the future! The following people
+    worked on the game: Timothek, Volim, JennySt, EvginBorg '
+  time_to_show: 1
+  letterSpeed: 0
+--- !u!114 &948528417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948528412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 1
+  text: Let this light be a guiding star for every lost ship. May everyone, looking
+    at this beam, return home safe and sound.
+  time_to_show: 1
+  letterSpeed: 0
+--- !u!114 &948528418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948528412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbb51be1d967b94f9f0138d65f67ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _outline: {fileID: 1072380036}
+  _outlineWidth: 25.48
+  quest: {fileID: 460237840}
+  stage: -1
+  _staticOutlineWidth: 8
+  subtitle: {fileID: 0}
+  endSubtitle: {fileID: 948528417}
+  thanksSubtitle: {fileID: 948528416}
 --- !u!1001 &957070933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27961,8 +28188,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &971466091
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28261,7 +28488,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &1020340216
 MeshRenderer:
@@ -28322,6 +28549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1028362260}
+  - component: {fileID: 1028362261}
   m_Layer: 9
   m_Name: Kapusta
   m_TagString: Untagged
@@ -28359,6 +28587,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028362261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028362259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: I didn't like cabbage until I tried Katerina's cabbage rolls one day. They
+    were right there, on the plate. Cooling down on the sill of her open window.
+    I was young and foolish. I only tried... a few when Katerina came out to shoo
+    me away with a towel.
+  time_to_show: 3
+  letterSpeed: 0
 --- !u!1 &1031216826
 GameObject:
   m_ObjectHideFlags: 0
@@ -32346,8 +32593,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1088100213
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32811,7 +33058,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &1257481320
 MeshRenderer:
@@ -35442,8 +35689,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1352831134
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37200,8 +37447,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1362594857
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37390,6 +37637,8 @@ MonoBehaviour:
   displaying: 0
   defaultLetterSpeed: 0.05
   gradient: {fileID: 0}
+  goBlack: 1
+  comment: {fileID: 463772543}
 --- !u!1 &1431987935
 GameObject:
   m_ObjectHideFlags: 0
@@ -37673,7 +37922,7 @@ MonoBehaviour:
   quest: {fileID: 1722330553}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 1625651007}
   turnOffLight: 1
 --- !u!64 &1462458586
 MeshCollider:
@@ -38241,7 +38490,7 @@ MonoBehaviour:
   quest: {fileID: 1722330553}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 1625651007}
   turnOffLight: 1
 --- !u!64 &1501936737
 MeshCollider:
@@ -40080,8 +40329,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1522404547
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40179,7 +40428,7 @@ MonoBehaviour:
   quest: {fileID: 1099263012}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 1548828664}
   PochinenijOgorod: {fileID: 459567823}
 --- !u!65 &1548828662
 BoxCollider:
@@ -40202,6 +40451,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 19.860075, y: 4.5802827, z: 12.167036}
   m_Center: {x: -0.29629946, y: 1.7901398, z: 0.047511205}
+--- !u!114 &1548828664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548828659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: Oi! It's a shame it's in such a state. At home, I had the same, maybe a little
+    bigger, garden that Katrine and I built in the first years of our marriage. It
+    was a big challenge, ha ha ha!
+  time_to_show: 3
+  letterSpeed: 0
 --- !u!1001 &1549668688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42131,8 +42398,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1577551313
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42442,7 +42709,7 @@ MonoBehaviour:
   quest: {fileID: 1722330553}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 1625651007}
   turnOffLight: 1
 --- !u!64 &1625651003
 MeshCollider:
@@ -42466,6 +42733,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3537709356157935800, guid: b4960a40829300a4d97842a926b18eee, type: 3}
+--- !u!114 &1625651007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625650997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: Just recently, I was the one boarding up the windows in my house. It was
+    hard to say goodbye. With every nail I wondered, 'Is this it?' Maybe I should
+    stay? But I'm glad I decided to make my dream come true. It is never late for
+    such things
+  time_to_show: 1
+  letterSpeed: 0
 --- !u!1 &1631893107
 GameObject:
   m_ObjectHideFlags: 0
@@ -42684,7 +42970,7 @@ MonoBehaviour:
   quest: {fileID: 1573125630}
   stage: 0
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 1656867156}
   targetChemodan: {fileID: 567538570}
   targetChemodanFinal: {fileID: 0}
 --- !u!114 &1656867148
@@ -43598,8 +43884,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 0
-  text: 
-  time_to_show: 1
+  text: I bought this case when I was young. My dream was to go on a trip one day.
+    But it sat in the attic for about 40 years... Still looks like brand new!
+  time_to_show: 5
   letterSpeed: 0
 --- !u!1001 &1664728031
 PrefabInstance:
@@ -43776,15 +44063,16 @@ RectTransform:
   m_GameObject: {fileID: 1673400846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8.624622, y: 6.6466784, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 463772544}
   m_Father: {fileID: 4436661370889258994}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000025431}
   m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673400848
@@ -47331,8 +47619,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1732845662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49510,8 +49798,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1818304756
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49757,7 +50045,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &1826222371
 MeshRenderer:
@@ -51897,8 +52185,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &1947806319
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52982,7 +53270,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &2084604557
 MeshRenderer:
@@ -53382,7 +53670,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &2088759955
 MeshRenderer:
@@ -53452,6 +53740,7 @@ GameObject:
   - component: {fileID: 2105654704}
   - component: {fileID: 2105654703}
   - component: {fileID: 2105654702}
+  - component: {fileID: 2105654711}
   m_Layer: 0
   m_Name: Intro
   m_TagString: Untagged
@@ -53487,9 +53776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u042D\u0442\u043E\u0433\u043E \u043D\u0438\u043A\u043E\u0433\u0434\u0430
-    \u043D\u0435 \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E. \u041F\u043E\u043A\u0430
-    \u043E\u0434\u043D\u0430\u0436\u0434\u044B\u2026"
+  text: The only thing is...
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654703
@@ -53505,7 +53792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u0422\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u0442\u2026"
+  text: I wanted to become a guiding light for them!..
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654704
@@ -53521,24 +53808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u0423 \u043C\u0435\u043D\u044F \u0437\u0430\u043C\u0435\u0440\u043B\u043E
-    \u0434\u044B\u0445\u0430\u043D\u0438\u0435 \u043F\u0440\u0438 \u0432\u0438\u0434\u0435
-    \u044D\u0442\u043E\u0439 \u043A\u0430\u0440\u0442\u0438\u043D\u044B. \u0427\u0442\u043E-\u0442\u043E
-    \u0433\u043B\u0443\u0431\u043E\u043A\u043E \u0432\u043D\u0443\u0442\u0440\u0438
-    \u043C\u0435\u043D\u044F \u0432\u043E\u0437\u0437\u0432\u0430\u043B\u043E \u043A
-    \u044D\u0442\u043E\u043C\u0443 \u0441\u044E\u0436\u0435\u0442\u0443. \u041C\u043D\u0435
-    \u0445\u043E\u0442\u0435\u043B\u043E\u0441\u044C \u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
-    \u0442\u0430\u043C. \u041F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
-    \u044D\u0442\u043E\u0442 \u0441\u043E\u043B\u043E\u043D\u043E\u0432\u0430\u0442\u044B\u0439
-    \u043C\u043E\u0440\u0441\u043A\u043E\u0439 \u0432\u043E\u0437\u0434\u0443\u0445,
-    \u043E\u0442 \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E \u0441\u043F\u0438\u0440\u0430\u0435\u0442
-    \u0434\u044B\u0445\u0430\u043D\u0438\u0435!.. \u0423\u0445\u0432\u0430\u0442\u0438\u0442\u044C\u0441\u044F
-    \u0437\u0430 \u044D\u0442\u0443 \u043C\u0430\u0447\u0442\u0443 \u0438 \u0431\u0435\u0441\u0441\u0442\u0440\u0430\u0448\u043D\u043E
-    \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C \u044D\u0442\u043E \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0435\u0435
-    \u0438\u0441\u043F\u044B\u0442\u0430\u043D\u0438\u0435!..\u0414\u043E\u043A\u0430\u0437\u0430\u0442\u044C,
-    \u0447\u0442\u043E \u044F \u043C\u043E\u0433\u0443 \u0441\u0440\u0430\u0437\u0438\u0442\u044C\u0441\u044F
-    \u0441 \u0441\u0430\u043C\u0438\u043C \u043C\u043E\u0440\u0441\u043A\u0438\u043C
-    \u0434\u044C\u044F\u0432\u043E\u043B\u043E\u043C \u0432\u043E \u043F\u043B\u043E\u0442\u0438!.."
+  text: 'I wanted to become... '
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654705
@@ -53554,20 +53824,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u0422\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u0442, \u0441\u0430\u043C\u043E\u0435
-    \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435, \u0447\u0442\u043E \u044F \u0434\u043E
-    \u0441\u0438\u0445 \u043F\u043E\u0440 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u044E
-    \u0432\u0435\u0440\u0438\u0442\u044C \u0432 \u0442\u043E, \u0447\u0442\u043E
-    \u044D\u0442\u0438 \u043B\u044E\u0434\u0438 \u043E\u0441\u0442\u0430\u043B\u0438\u0441\u044C
-    \u0436\u0438\u0432\u044B. \u0417\u043E\u043B\u043E\u0442\u044B\u0435 \u043B\u0443\u0447\u0438
-    \u0441\u043E\u043B\u043D\u0446\u0430 \u043D\u0430 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0435
-    \u0434\u0430\u044E\u0442 \u043D\u0430\u0434\u0435\u0436\u0434\u0443, \u0447\u0442\u043E
-    \u0441 \u043D\u0438\u043C\u0438 \u0432\u0441\u0435 \u0431\u0443\u0434\u0435\u0442
-    \u0432\u043F\u043E\u0440\u044F\u0434\u043A\u0435. \u0427\u0442\u043E \u043E\u043D\u0438
-    \u043F\u0435\u0440\u0435\u0436\u0438\u0432\u0443\u0442 \u044D\u0442\u043E\u0442
-    \u0448\u0442\u043E\u0440\u043C. \u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043B\u0438\u0448\u044C
-    \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C \u0431\u043E\u0440\u043E\u0442\u044C\u0441\u044F
-    \u0441 \u044D\u0442\u043E\u0439 \u0441\u0442\u0438\u0445\u0438\u0435\u0439"
+  text: Something deep inside me called to this scene. I still believe that these
+    people survived. The golden sun on the horizon gives a sense of hope that everything
+    will be okay with them. That they will survive this storm. The main thing is
+    to continue to fight this wild nature!..The main thing is to believe in this
+    light of hope!..
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654706
@@ -53583,22 +53844,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u042D\u0442\u043E \u0431\u044B\u043B \u0448\u0442\u043E\u0440\u043C. \u041F\u043E\u0442\u0435\u0440\u043F\u0435\u0432\u0448\u0438\u0435
-    \u043A\u0440\u0443\u0448\u0435\u043D\u0438\u0435 \u043B\u044E\u0434\u0438. \u041E\u043D\u0438
-    \u0445\u0432\u0430\u0442\u0430\u044E\u0442\u0441\u044F \u0437\u0430 \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u0443\u044E
-    \u0443\u0446\u0435\u043B\u0435\u0432\u0448\u0443\u044E \u043C\u0430\u0447\u0442\u0443,
-    \u0431\u0443\u0434\u0442\u043E \u044D\u0442\u043E \u0438\u0445 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439
-    \u0448\u0430\u043D\u0441 \u043D\u0430 \u0441\u043F\u0430\u0441\u0435\u043D\u0438\u0435.
-    \u0412 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438
-    \u043E\u043D\u0438 \u043E\u0431\u0440\u0435\u0447\u0435\u043D\u044B. \u041C\u043E\u0433\u0443\u0447\u0430\u044F
-    \u0432\u043E\u0434\u043D\u0430\u044F \u0441\u0442\u0438\u0445\u0438\u044F \u0432\u0437\u0434\u044B\u043C\u0430\u0435\u0442\u0441\u044F
-    \u043D\u0430\u0434 \u043D\u0438\u043C\u0438 \u0438 \u0431\u0435\u0441\u043F\u043E\u0449\u0430\u0434\u043D\u043E
-    \u0445\u043B\u0435\u0449\u0435\u0442 \u0438\u0445 \u0441\u043E \u0432\u0441\u0435\u0445
-    \u0441\u0442\u043E\u0440\u043E\u043D. \u041D\u0430\u043A\u043E\u043D\u0435\u0446,
-    \u0432\u0434\u0430\u043B\u0435\u043A\u0435 \u0432\u0438\u0434\u043D\u0435\u0435\u0442\u0441\u044F
-    \u0433\u0438\u0433\u0430\u043D\u0442\u0441\u043A\u0430\u044F \u0432\u043E\u043B\u043D\u0430
-    - \u0434\u0435\u0432\u044F\u0442\u044B\u0439 \u0432\u0430\u043B - \u043A\u043E\u0442\u043E\u0440\u0430\u044F
-    \u0438\u0445 \u0442\u043E\u0447\u043D\u043E \u0437\u0430\u0433\u0443\u0431\u0438\u0442"
+  text: "It was a storm. Shipwrecked people. Clinging to the only mast that left
+    is their last chance of salvation. The truth is, they are doomed. A mighty water
+    rises above them, lashing them mercilessly from all sides. Finally, a gigantic
+    wave \u2013 the ninth wave \u2013 appears in the distance, certain to slaughter
+    them."
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654707
@@ -53614,13 +53864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u041D\u043E \u043C\u0435\u043D\u044F \u043C\u0430\u043B\u043E \u044D\u0442\u043E
-    \u0432\u043E\u043B\u043D\u043E\u0432\u0430\u043B\u043E. \u042F \u0431\u044B\u043B
-    \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043E\u0445\u0432\u0430\u0447\u0435\u043D
-    \u044D\u0442\u0438\u043C \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u044B\u043C
-    \u0447\u0443\u0432\u0441\u0442\u0432\u043E\u043C, \u0447\u0442\u043E \u043F\u043E\u044F\u0432\u0438\u043B\u043E\u0441\u044C
-    \u0443 \u043C\u0435\u043D\u044F \u0432 \u0434\u0443\u0448\u0435 \u043F\u0440\u0438
-    \u0432\u0438\u0434\u0435 \u044D\u0442\u043E\u0433\u043E \u043F\u0435\u0439\u0437\u0430\u0436\u0430"
+  text: The fact that it was fake didn't worry me at all. I was completely overwhelmed
+    by this strange feeling that arose in my soul at the sight of this landscape.
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654708
@@ -53636,16 +53881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u042F \u0431\u044B\u043B \u0435\u0449\u0451 \u0441\u043E\u0432\u0441\u0435\u043C
-    \u044E\u043D, \u043A\u043E\u0433\u0434\u0430 \u0443\u0432\u0438\u0434\u0435\u043B
-    \u043A\u0430\u0440\u0442\u0438\u043D\u0443, \u043A\u043E\u0442\u043E\u0440\u0430\u044F
-    \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u043F\u043E\u0441\u0435\u043B\u0438\u043B\u0430\u0441\u044C
-    \u0432 \u043C\u043E\u0435\u0439 \u0434\u0443\u0448\u0435. \u041A\u0430\u0436\u0435\u0442\u0441\u044F,
-    \u044D\u0442\u043E \u0431\u044B\u043B\u043E \u0434\u0430\u0436\u0435 \u043D\u0435
-    \u043F\u043E\u0434\u043B\u0438\u043D\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435.
-    \u041A\u0430\u043A\u0430\u044F-\u0442\u043E \u043F\u0435\u0440\u0435\u0440\u0438\u0441\u043E\u0432\u043A\u0430
-    \u043D\u0430 \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u043E\u043C \u0445\u043E\u043B\u0441\u0442\u0435
-    \u043D\u0430 \u0433\u043E\u0440\u043E\u0434\u0441\u043A\u043E\u0439 \u044F\u0440\u043C\u0430\u0440\u043A\u0435"
+  text: When I was young, I saw a painting that has stayed with me forever.A reproduction
+    on a small canvas during a city fair
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654709
@@ -53661,8 +53898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitForUser: 1
-  text: "\u042F \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0432\u0438\u0434\u0435\u043B
-    \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0433\u043E \u043C\u043E\u0440\u044F"
+  text: The sea is something I haven't been to
   time_to_show: 1
   letterSpeed: 0.05
 --- !u!114 &2105654710
@@ -53686,7 +53922,24 @@ MonoBehaviour:
   - {fileID: 2105654704}
   - {fileID: 2105654703}
   - {fileID: 2105654702}
-  lastSubtitle: {fileID: 2105654702}
+  - {fileID: 2105654711}
+  lastSubtitle: {fileID: 2105654711}
+--- !u!114 &2105654711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105654700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 1
+  text: It never happened. Until one day...
+  time_to_show: 1
+  letterSpeed: 0.05
 --- !u!1 &2141777009
 GameObject:
   m_ObjectHideFlags: 0
@@ -53701,6 +53954,7 @@ GameObject:
   - component: {fileID: 2141777013}
   - component: {fileID: 2141777012}
   - component: {fileID: 2141777011}
+  - component: {fileID: 2141777016}
   m_Layer: 3
   m_Name: Cube.014 (2)
   m_TagString: Untagged
@@ -53910,7 +54164,7 @@ MonoBehaviour:
   quest: {fileID: 208727753}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
+  subtitle: {fileID: 2141777016}
   turnOffLight: 1
 --- !u!23 &2141777014
 MeshRenderer:
@@ -53962,6 +54216,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141777009}
   m_Mesh: {fileID: -2865104911859505335, guid: b4960a40829300a4d97842a926b18eee, type: 3}
+--- !u!114 &2141777016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141777009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitForUser: 0
+  text: I've dreamed of this view from the window for as long as I can remember.
+    It would be great if Katerina were here with me. She would have loved it.
+  time_to_show: 2
+  letterSpeed: 0
 --- !u!1001 &993277789810663784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54057,7 +54328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Subtitle
       value: 
-      objectReference: {fileID: 1187226471597413534}
+      objectReference: {fileID: 0}
     - target: {fileID: 6292044558853229726, guid: 9805cb35537ca534d89cbf2385f4399e,
         type: 3}
       propertyPath: outlineMode
@@ -65939,39 +66210,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oiler
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1005490699078658984, guid: 9805cb35537ca534d89cbf2385f4399e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8737694663237616581, guid: 9805cb35537ca534d89cbf2385f4399e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1187226471597413534}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9805cb35537ca534d89cbf2385f4399e, type: 3}
---- !u!1 &1187226471597413533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8737694663237616581, guid: 9805cb35537ca534d89cbf2385f4399e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1187226471597413532}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1187226471597413534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187226471597413533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39f6deb2768115243a3199b7270617ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WaitForUser: 0
-  text: "\u0421\u0443\u0431\u0442\u0438\u0442\u0440 \u0441\u0443\u0431\u0442\u0438\u0442\u0440
-    \u0441\u0443\u0431\u0442\u0438\u0442\u0440, \u0441\u0443\u0431\u0442\u0438\u0442\u0440
-    \u0441\u0443\u0431\u0442\u0438\u0442\u0440 \u0441\u0443\u0431\u0442\u0438\u0442\u0440"
-  time_to_show: 5
-  letterSpeed: 0
 --- !u!1001 &2878595059677970263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66437,12 +66681,12 @@ PrefabInstance:
     - target: {fileID: 8970455330552850483, guid: 0fadef223fb63ee42acb07e57171be5b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.832733
+      value: 6.8323975
       objectReference: {fileID: 0}
     - target: {fileID: 8970455330552850483, guid: 0fadef223fb63ee42acb07e57171be5b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00015258789
+      value: 0.000015258789
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -66528,17 +66772,17 @@ PrefabInstance:
     - target: {fileID: 5399679642486599528, guid: 646543ba38014f741897ecd849168963,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 654.99
+      value: 614.13
       objectReference: {fileID: 0}
     - target: {fileID: 5399679642486599528, guid: 646543ba38014f741897ecd849168963,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25
+      value: 15.83
       objectReference: {fileID: 0}
     - target: {fileID: 5399679642486599528, guid: 646543ba38014f741897ecd849168963,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 510.11
+      value: 562.07
       objectReference: {fileID: 0}
     - target: {fileID: 5399679642486599528, guid: 646543ba38014f741897ecd849168963,
         type: 3}
@@ -66589,6 +66833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437746889709128846, guid: 646543ba38014f741897ecd849168963,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5438404420223685980, guid: 646543ba38014f741897ecd849168963,
         type: 3}
@@ -68300,8 +68549,8 @@ MonoBehaviour:
   quest: {fileID: 575482036}
   stage: -1
   _staticOutlineWidth: 8
-  subtitle: {fileID: 0}
-  turnOffLight: 1
+  subtitle: {fileID: 1028362261}
+  turnOffLight: 0
 --- !u!64 &5312335397162072023
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -68887,6 +69136,11 @@ PrefabInstance:
       propertyPath: intro
       value: 
       objectReference: {fileID: 2105654710}
+    - target: {fileID: 6027629156078527581, guid: 039e1e33ed8d13147b8d0fc82f20a55c,
+        type: 3}
+      propertyPath: firstQuest
+      value: 
+      objectReference: {fileID: 1573125630}
     - target: {fileID: 6911675305770114887, guid: 039e1e33ed8d13147b8d0fc82f20a55c,
         type: 3}
       propertyPath: m_Name

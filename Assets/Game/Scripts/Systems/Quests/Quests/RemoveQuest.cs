@@ -7,6 +7,9 @@ public class RemoveQuest : QuestInteractable
     public bool turnOffLight = true;
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         if (turnOffLight)
         {

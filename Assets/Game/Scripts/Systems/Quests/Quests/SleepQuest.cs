@@ -8,6 +8,9 @@ public class SleepQuest : QuestInteractable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         GameManager.Screen.Dark(0.5f);
         GameManager.Time.NextDay();
@@ -23,6 +26,7 @@ public class SleepQuest : QuestInteractable
             newKrovat.SetActive(true);
             gameObject.SetActive(false);
         }
+        QuestEvents.QuestUpdated?.Invoke(this.quest);
     }
 
     public override void OnQuestAccesed()

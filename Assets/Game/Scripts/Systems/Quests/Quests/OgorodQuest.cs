@@ -8,6 +8,9 @@ public class OgorodQuest : QuestInteractable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         GameManager.Screen.Dark(0.5f);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().LockMovement();

@@ -14,6 +14,9 @@ public class ChemodalQuest : QuestInteractable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         if(stage == 0)
         {

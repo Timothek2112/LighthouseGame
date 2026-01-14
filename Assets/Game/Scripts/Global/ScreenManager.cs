@@ -8,13 +8,16 @@ public class ScreenManager : MonoBehaviour
 {
     public Image curtain;
 
+
     public void Dark(float time)
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().LockMovement();
         StartCoroutine(FadeIn(time));
     }
 
     public void Light(float time)
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().UnlockMovement();
         StartCoroutine(FadeOut(time));
     }
 

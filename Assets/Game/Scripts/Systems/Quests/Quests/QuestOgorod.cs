@@ -8,6 +8,9 @@ public class QuestOgorod : QuestInteractable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         base.Interact(controller);
         OgorodGood.SetActive(true);
         gameObject.SetActive(false);

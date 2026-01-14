@@ -74,6 +74,7 @@ public class Quest : MonoBehaviour
 
     public bool PrerequisitesDone()
     {
+
         if (Prerequisites.Count == 0)
         {
             if(GameManager.Time.GetToday() == day)

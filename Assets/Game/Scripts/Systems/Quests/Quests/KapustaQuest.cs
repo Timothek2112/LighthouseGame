@@ -9,6 +9,9 @@ public class KapustaQuest : QuestInteractable
 
     public override void Interact(PlayerController controller)
     {
+        if (!quest.PrerequisitesDone() || quest.Completed)
+            return;
+
         if (used)
             return;
 
