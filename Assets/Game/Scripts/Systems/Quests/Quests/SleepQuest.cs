@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SleepQuest : QuestInteractable
 {
+    public GameObject newKrovat;
+
     public override void Interact(PlayerController controller)
     {
         base.Interact(controller);
@@ -16,5 +18,16 @@ public class SleepQuest : QuestInteractable
     private void Sleep()
     {
         GameManager.Screen.Light(0.5f);
+        if (newKrovat != null)
+        {
+            newKrovat.SetActive(true);
+            gameObject.SetActive(false);
+        }
+    }
+
+    public override void OnQuestAccesed()
+    {
+        base.OnQuestAccesed();
+
     }
 }

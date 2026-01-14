@@ -9,12 +9,7 @@ public class ChemodalQuest : QuestInteractable
 
     public override void PreInteract()
     {
-        if(stage == 0)
-            base.PreInteract();
-        else if(stage == 1)
-        {
-            _outline.OutlineMode = Outline.Mode.OutlineAll;
-        }
+        base.PreInteract();
     }
 
     public override void Interact(PlayerController controller)
@@ -36,11 +31,6 @@ public class ChemodalQuest : QuestInteractable
 
     public override void PostInteract()
     {
-        if (stage == 0)
-            base.PostInteract();
-        else if (stage == 1)
-        {
-            _outline.OutlineMode = Outline.Mode.OutlineAndSilhouette;
-        }
+        base.PostInteract();
     }
 }

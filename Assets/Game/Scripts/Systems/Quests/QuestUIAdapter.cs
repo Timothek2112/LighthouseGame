@@ -50,13 +50,6 @@ public class QuestUIAdapter : MonoBehaviour
 
         title.text = quest.title;
 
-        if(quest.stages.Count > 0)
-        {
-            stages.text = quest.stages.Where(p => p.Completed).Count().ToString() + " / " + quest.stages.Count().ToString();
-        }
-        else
-        {
-            stages.text = "";
-        }
+        stages.text = quest.GetCount();
     }
 }

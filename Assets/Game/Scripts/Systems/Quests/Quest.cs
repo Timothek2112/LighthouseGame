@@ -13,6 +13,8 @@ public class Quest : MonoBehaviour
     public int day;
     public bool isStage = false;
     public bool forceNotification = false;
+    public int taskCount = 0;
+    public int taskCurrent = 0;
 
     public List<Quest> Prerequisites = new List<Quest>();
 
@@ -28,23 +30,46 @@ public class Quest : MonoBehaviour
     {
         if (stage == -1 || stage == stages.Count - 1)
         {
-            Completed = true;
-            try
+            if(taskCount > 0)
             {
-                if (stage != -1)
+                taskCurrent++;
+
+                if (taskCurrent >= taskCount)
                 {
-                    stages[stage].Complete();
+                    Completed = true;
+                    taskCurrent = taskCount;
                 }
             }
-            catch(Exception ex)
+            else
             {
-                Debug.LogException(ex);
+                Completed = true;
+                try
+                {
+                    if (stage != -1)
+                    {
+                        stages[stage].Complete();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogException(ex);
+                }
+
             }
         }
         else
+        {
             stages[stage].Complete();
+        }
 
-        QuestEvents.QuestUpdated?.Invoke(this);
+        try
+        {
+            QuestEvents.QuestUpdated?.Invoke(this);
+        }
+        catch(Exception ex)
+        {
+            Debug.LogException(ex);
+        }
     }
 
     public bool PrerequisitesDone()
@@ -58,5 +83,21 @@ public class Quest : MonoBehaviour
         }
 
         return Prerequisites.Where(p => p.Completed).ToList().Count == Prerequisites.Count && GameManager.Time.GetToday() == day;
+    }
+
+    public string GetCount()
+    {
+
+        if (taskCount > 0)
+        {
+            return taskCurrent.ToString() + "/" + taskCount.ToString();
+        }
+
+        if (stages.Count > 0)
+        {
+            return stages.Where(p => p.Completed).ToList().Count.ToString() + "/" + stages.Count;
+        }
+
+        return "";
     }
 }

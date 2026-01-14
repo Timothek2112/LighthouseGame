@@ -14,7 +14,7 @@ public class QuestUIController : MonoBehaviour
     private Transform QuestParent;
     public int stagePadding = 50;
 
-    private void Awake()
+    private void Start()
     {
         GameManager.Time.DayChanged += DayChanged;
         QuestEvents.QuestUpdated += QuestUpdated;

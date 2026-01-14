@@ -7,6 +7,8 @@ public class TimeManager : MonoBehaviour
 {
     [SerializeField]
     private int today = 0;
+    [SerializeField]
+    private Light sun;
 
     public Action<int> DayChanged;
 

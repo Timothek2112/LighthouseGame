@@ -14,6 +14,8 @@ public class PlayerTarget : MonoBehaviour
 
     [SerializeField] private Interactable currentInteractable;
 
+    public GameObject hint;
+
     private void Update()
     {
         CheckForInteractable();
@@ -43,9 +45,20 @@ public class PlayerTarget : MonoBehaviour
     void SetInteractable(Interactable interactable)
     {
         if (currentInteractable != null)
+        {
             currentInteractable.PostInteract();
+            hint.SetActive(false);
+
+        }
         currentInteractable = interactable;
-        if(currentInteractable != null)
+        if (currentInteractable != null)
+        {
             currentInteractable.PreInteract();
+            if (currentInteractable.TryGetComponent<QuestInteractable>(out var qInt))
+            {
+                if(qInt.quest.PrerequisitesDone())
+                    hint.SetActive(true);
+            }
+        }
     }
 }
